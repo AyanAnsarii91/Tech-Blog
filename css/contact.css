@@ -1,0 +1,92 @@
+body {
+    overflow: hidden;
+}
+
+/* Default styles */
+.contact-content {
+    height: 395px;
+    height: 80vh;
+    display: flex;
+    margin-top: 10px;
+    /* padding: 10px; */
+    background-image: url("../Assets/11.svg");
+    opacity: 0.85;
+}
+
+h2 {
+    position: relative;
+    font-size: 30px;
+    bottom: 23%;
+}
+
+.contact-content::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    width: 99vw;
+}
+
+.footer {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.contact-form {
+    position: relative;
+    bottom: 10%;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .contact-content {
+        height: 60vh;
+        /* Adjust height for smaller screens */
+        padding: 15px;
+        /* Add some more padding for mobile */
+    }
+
+    h2 {
+        font-size: 24px;
+        /* Reduce font size for smaller screens */
+        bottom: 15%;
+    }
+
+    .contact-form {
+        bottom: 5%;
+        /* Adjust bottom spacing */
+    }
+
+    .footer {
+        position: relative;
+        /* Change footer position for smaller screens */
+        bottom: 0;
+    }
+}
+
+/* Media Query for very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .contact-content {
+        height: 50vh;
+        /* Further adjust height for very small screens */
+    }
+
+    h2 {
+        font-size: 20px;
+        /* Further reduce font size for very small screens */
+        bottom: 10%;
+    }
+
+    .contact-form {
+        bottom: 0;
+        /* Make sure the form is not too far down */
+    }
+
+    .footer {
+        position: relative;
+        /* Adjust footer for mobile */
+        bottom: 0;
+    }
+}
